@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import logo from './logo.svg'
 import './App.css'
 
 function App() {
@@ -7,8 +6,10 @@ function App() {
   const add = () => {
     init++;
     document.getElementById('show').value = init;
+
   }
   return (
+
     <div className="App">
       <input id="show" type="text" value={init} readOnly={true} />
       <input type="button" value='click me' onClick={add} />
@@ -33,4 +34,10 @@ function App2() {
   )
 }
 
-export {App2, App}
+const Main = () => {
+    return (
+        <div className="rootmain" id={'newroot'}></div>
+    )
+}
+
+export {App2, App, Main}

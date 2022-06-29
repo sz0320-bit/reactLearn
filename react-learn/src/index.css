@@ -6,7 +6,38 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+*{
+  border: 2px solid teal;
+}
+h1{
+   color: white;
+ }
+.mainHeader h1{
+  color: white;
+  font-size: 3rem;
+}
+.mainHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.buttonHolder{
+  position: absolute;
+  right: 1em;
+  display: flex;
+  gap: 1em;
+}
+.nav-default input{
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
